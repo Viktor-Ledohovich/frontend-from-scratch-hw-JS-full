@@ -2,4 +2,11 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = i;
+const i = 1;
+
+while (sum <= 210) {
+
+    i = i + i++
+    console.log("sum")
+}
