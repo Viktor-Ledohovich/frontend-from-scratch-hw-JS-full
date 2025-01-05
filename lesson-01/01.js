@@ -4,11 +4,8 @@
 // your code
 let sum = 0;
 
-while (true) {
-  if (sum >= 20) {
-    break;
-  }
-  sum += Number(sum + 1);
+while (sum <= 210 ) {
+  console.log(sum)
+  sum = sum++ + sum
 }
 
-console.log(sum);
