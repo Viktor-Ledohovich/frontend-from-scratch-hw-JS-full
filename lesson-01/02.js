@@ -7,10 +7,12 @@
 
 // your code
 let factorial = 1;
+let i = 1;
 
-while (factorial <= 3628800) {
-  console.log(factorial)
-  factorial = factorial * (factorial + 1)  
-  break;
+while (i <= 10) {
+  
+  factorial = factorial * i;
+  i++;
 }
+console.log(factorial);
 
