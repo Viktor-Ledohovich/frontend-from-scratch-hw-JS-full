@@ -6,4 +6,11 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+
+while (factorial <= 3628800) {
+  console.log(factorial)
+  factorial = factorial * (factorial + 1)  
+  break;
+}
+
