@@ -8,18 +8,19 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+const isAdmin = false;
+const isVerifiedUser = true;
+const hasSpecialPermission = true;
+const hasTemporaryPass = false;
 
-let isAccess = false;
+let isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
 
-if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true))
-{
-    alert("Доступ разрешен")
+if (isAccess) {
+    alert("Доступ разрешен");
 } else {
-    alert("Доступ запрещен")
+    alert("Доступ запрещен");
 }
 
-// your code
+console.log("Статус доступа:", isAccess);
+
+
